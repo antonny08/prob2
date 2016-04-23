@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script type="text/javascript" src="phaser.min.js"></script>
+        
+        <script>
+            
+            var game = new Phaser.Game(800,600,Phaser.AUTO,'',{preload:preload,create:create,update:update});
+            
+            function preload(){
+                game.load.image("road","assets/road.png");
+            }
+            function create(){
+                
+                this.bg = game.add.sprite(0,0,"road");
+            }
+            function update(){
+                
+            }
+            
+        </script>
+        
+        
+    </body>
+</html>
